@@ -43,7 +43,7 @@ export const roles = [
 ] as const
 
 export const stats = [
-  { value: '3+', label: 'Años desarrollando software' },
+  { value: '2+', label: 'Años desarrollando software' },
   { value: '2°', label: 'Puesto Hackathon SENA' },
   { value: '10+', label: 'Tecnologías en producción' },
 ] as const
