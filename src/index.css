@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink-950 text-slate-300 antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent-500/30 text-white;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-5xl px-6;
+  }
+
+  .card {
+    @apply rounded-xl border border-white/5 bg-ink-900/60 p-6 transition-colors duration-300 hover:border-accent-500/40;
+  }
+
+  .chip {
+    @apply rounded-md border border-white/5 bg-ink-800 px-3 py-1 text-sm text-slate-400 transition-colors hover:border-accent-500/40 hover:text-accent-400;
+  }
+
+  .link-accent {
+    @apply text-slate-400 transition-colors hover:text-accent-400;
+  }
+}
