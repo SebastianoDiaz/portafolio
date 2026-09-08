@@ -25,8 +25,8 @@ export const profile = {
   location: 'Armenia, Quindío — Colombia',
   email: 'sebaspro7767@gmail.com',
   phone: '+57 301 821 5155',
-  github: 'https://github.com/samuraypro7767',
-  linkedin: 'https://www.linkedin.com/in/sebastian-osorio-osorio-diaz-30078b353/',
+  github: 'https://github.com/SebastianoDiaz',
+  linkedin: 'https://www.linkedin.com/in/sebasti%C3%A1n-osorio-diaz-30078b353/',
   about: [
     'Desarrollador Full Stack con experiencia en el diseño, desarrollo, implementación y mantenimiento de soluciones empresariales, tanto en frontend como en backend.',
     'Trabajo con APIs REST, bases de datos, servicios en la nube (AWS, Azure, GCP) e inteligencia artificial aplicada al desarrollo de software, siempre con validación humana.',

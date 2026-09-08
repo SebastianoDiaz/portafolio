@@ -7,7 +7,7 @@ import { Section } from './Section'
 const channels = [
   { icon: Mail, label: profile.email, href: `mailto:${profile.email}` },
   { icon: Phone, label: profile.phone, href: `tel:${profile.phone.replace(/\s/g, '')}` },
-  { icon: GithubIcon, label: 'github.com/samuraypro7767', href: profile.github },
+  { icon: GithubIcon, label: 'github.com/SebastianoDiaz', href: profile.github },
   { icon: LinkedinIcon, label: 'LinkedIn', href: profile.linkedin },
 ]
 
