@@ -5,9 +5,9 @@ import { Section } from './Section'
 export function Experience() {
   return (
     <Section id="experiencia" index="02" title="Experiencia">
-      <ol className="relative border-l border-white/10 pl-6 sm:pl-8">
+      <ol className="relative border-l border-white/10 pl-4 sm:pl-8">
         {experiences.map((experience, index) => (
-          <li key={`${experience.company}-${experience.period}`} className="pb-10 last:pb-0">
+          <li key={`${experience.company}-${experience.period}`} className="pb-8 last:pb-0 sm:pb-10">
             <Reveal delay={index * 80}>
               <span className="absolute -left-[5px] mt-2 h-2.5 w-2.5 rounded-full bg-accent-500 ring-4 ring-ink-950" />
               <div className="card">

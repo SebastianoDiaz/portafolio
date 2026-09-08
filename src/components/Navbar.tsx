@@ -23,7 +23,9 @@ export function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-        scrolled ? 'border-b border-white/5 bg-ink-950/80 backdrop-blur-md' : 'border-b border-transparent'
+        scrolled || open
+          ? 'border-b border-white/5 bg-ink-950/90 backdrop-blur-md'
+          : 'border-b border-transparent'
       }`}
     >
       <nav className="container-page flex h-16 items-center justify-between">
@@ -52,7 +54,7 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <ul className="container-page flex flex-col gap-4 border-t border-white/5 bg-ink-950/95 py-6 md:hidden">
+        <ul className="flex flex-col gap-4 border-t border-white/5 bg-ink-950 px-5 py-6 shadow-xl shadow-black/50 md:hidden">
           {links.map((link) => (
             <li key={link.href}>
               <a href={link.href} onClick={() => setOpen(false)} className="text-sm link-accent">

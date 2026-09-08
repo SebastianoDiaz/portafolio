@@ -17,7 +17,7 @@ export function Terminal({ title, children, className = '' }: TerminalProps) {
         <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
         <span className="ml-3 font-mono text-xs text-slate-500">{title}</span>
       </div>
-      <div className="overflow-x-auto p-5 font-mono text-[13px] leading-relaxed">{children}</div>
+      <div className="overflow-x-auto p-4 font-mono text-[11.5px] leading-relaxed sm:p-5 sm:text-[13px]">{children}</div>
     </div>
   )
 }

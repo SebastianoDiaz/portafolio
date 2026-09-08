@@ -10,13 +10,13 @@ export function Hero() {
   const typed = useTypewriter(roles)
 
   return (
-    <section id="inicio" className="relative overflow-hidden pb-20 pt-32 sm:pt-40">
+    <section id="inicio" className="relative overflow-hidden pb-16 pt-28 sm:pb-20 sm:pt-40">
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-[-16rem] h-[34rem] w-[34rem] -translate-x-1/2 rounded-full bg-accent-600/20 blur-[150px]" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_at_top,black,transparent_70%)]" />
       </div>
 
-      <div className="container-page grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
+      <div className="container-page grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
         <div>
           <Reveal>
             <p className="inline-flex items-center gap-2 rounded-full border border-accent-500/30 bg-accent-500/10 px-3 py-1 font-mono text-xs text-accent-400">
@@ -26,13 +26,13 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={80}>
-            <h1 className="mt-6 text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl">
+            <h1 className="mt-6 text-[2rem] font-bold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
               {profile.name}
             </h1>
           </Reveal>
 
           <Reveal delay={140}>
-            <p className="mt-4 font-mono text-base text-slate-500 sm:text-lg">
+            <p className="mt-4 break-words font-mono text-sm text-slate-500 sm:text-lg">
               <span className="text-accent-500">$</span> {typed}
               <span className="ml-0.5 inline-block h-[1.05em] w-[0.55ch] translate-y-[0.15em] animate-pulse bg-accent-400" />
             </p>
@@ -46,14 +46,14 @@ export function Hero() {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a
                 href="#contacto"
-                className="inline-flex items-center gap-2 rounded-lg bg-accent-500 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-accent-600"
+                className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-accent-500 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-accent-600 sm:flex-none"
               >
                 Contáctame
                 <ArrowRight size={16} />
               </a>
               <a
                 href="#experiencia"
-                className="inline-flex items-center gap-2 rounded-lg border border-white/10 px-5 py-2.5 text-sm font-medium text-slate-300 transition-colors hover:border-accent-500/50 hover:text-white"
+                className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg border border-white/10 px-5 py-2.5 text-sm font-medium text-slate-300 transition-colors hover:border-accent-500/50 hover:text-white sm:flex-none"
               >
                 Ver experiencia
               </a>
@@ -74,8 +74,8 @@ export function Hero() {
                 <LinkedinIcon size={14} />
                 LinkedIn
               </a>
-              <a href={`mailto:${profile.email}`} className="inline-flex items-center gap-2 link-accent">
-                <Mail size={14} />
+              <a href={`mailto:${profile.email}`} className="inline-flex items-center gap-2 break-all link-accent">
+                <Mail size={14} className="shrink-0" />
                 {profile.email}
               </a>
             </div>
@@ -159,7 +159,7 @@ export function Hero() {
 
       <div className="container-page">
         <Reveal delay={380}>
-          <dl className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <dl className="mt-12 grid grid-cols-1 gap-4 sm:mt-16 sm:grid-cols-3">
             {stats.map((stat) => (
               <div key={stat.label} className="card">
                 <dt className="font-mono text-3xl font-semibold text-white">{stat.value}</dt>

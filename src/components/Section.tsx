@@ -10,7 +10,7 @@ type SectionProps = {
 
 export function Section({ id, index, title, children }: SectionProps) {
   return (
-    <section id={id} className="scroll-mt-24 py-20">
+    <section id={id} className="scroll-mt-20 py-16 sm:py-20">
       <div className="container-page">
         <Reveal>
           <header className="mb-10">
