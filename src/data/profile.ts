@@ -34,6 +34,14 @@ export const profile = {
   ],
 } as const
 
+export const roles = [
+  'full stack developer',
+  'backend con Java & Spring Boot',
+  'frontend con React & TypeScript',
+  'arquitectura hexagonal · SOLID',
+  'Docker & cloud (AWS / Azure / GCP)',
+] as const
+
 export const stats = [
   { value: '3+', label: 'Años desarrollando software' },
   { value: '2°', label: 'Puesto Hackathon SENA' },
