@@ -36,10 +36,10 @@ export const profile = {
 
 export const roles = [
   'full stack developer',
-  'backend con Java & Spring Boot',
+  'backend con Java, Spring Boot & .NET',
   'frontend con React & TypeScript',
   'arquitectura hexagonal · SOLID',
-  'Docker & cloud (AWS / Azure / GCP)',
+  'Docker, CI/CD & cloud (AWS / Azure / GCP)',
 ] as const
 
 export const stats = [
@@ -98,7 +98,7 @@ export const experiences: Experience[] = [
 export const skillGroups: SkillGroup[] = [
   {
     category: 'Lenguajes y frameworks',
-    items: ['Java', 'Python', 'Spring Boot', 'React', 'Vue.js', 'Angular', 'Express.js'],
+    items: ['Java', 'C#', '.NET', 'Python', 'Spring Boot', 'React', 'Vue.js', 'Angular', 'Express.js'],
   },
   {
     category: 'Frontend y diseño',
@@ -115,6 +115,15 @@ export const skillGroups: SkillGroup[] = [
   {
     category: 'Cloud y despliegue',
     items: ['AWS', 'Microsoft Azure', 'Google Cloud', 'Docker', 'Docker Compose', 'Render', 'Cloudinary'],
+  },
+  {
+    category: 'CI/CD y automatización',
+    items: [
+      'GitHub Actions',
+      'Azure DevOps Pipelines',
+      'Integración y despliegue continuo',
+      'Builds automatizados',
+    ],
   },
   {
     category: 'Calidad y arquitectura',

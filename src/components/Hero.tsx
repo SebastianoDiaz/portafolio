@@ -108,6 +108,10 @@ export function Hero() {
                 {code.punct(', ')}
                 {code.string("'Spring Boot'")}
                 {code.punct(', ')}
+                {code.string("'C#'")}
+                {code.punct(', ')}
+                {code.string("'.NET'")}
+                {code.punct(', ')}
                 {code.string("'React'")}
                 {code.punct('],')}
                 {'\n  '}
@@ -118,6 +122,13 @@ export function Hero() {
                 {code.string("'Azure'")}
                 {code.punct(', ')}
                 {code.string("'GCP'")}
+                {code.punct('],')}
+                {'\n  '}
+                {code.prop('cicd')}
+                {code.punct(': [')}
+                {code.string("'GitHub Actions'")}
+                {code.punct(', ')}
+                {code.string("'Azure DevOps'")}
                 {code.punct('],')}
                 {'\n  '}
                 {code.prop('architecture')}
